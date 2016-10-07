@@ -9,27 +9,12 @@
   <version>1.0-SNAPSHOT</version>
   <name>Parent</name>
   <description>Just a pom that makes it easy to build both projects at the same time.</description>
-<profiles>
-   <profile>
-         <id>all</id>
-          <modules>
-           <module>multi-module</module>  
-           <module>single-module</module>
-         </modules> 
-   </profile>        
-   <profile>
-         <id>multi</id>
-          <modules>
-           <module>multi-module</module>        
-         </modules> 
- </profile>
- <profile>
-     <id>single</id>
-     <modules>    
-         <module>single-module</module>
-     </modules> 
-  </profile>
-</profiles>
+
+  <modules>
+    <module>multi-module</module>
+    <module>single-module</module>
+  </modules>
+
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
